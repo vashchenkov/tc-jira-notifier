@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+       default-autowire="constructor">
+	<!--Teamcity inApp beans-->
+	<bean class="ru.gubber.citools.server.TeamcityToJiraBuildFeature" >
+	</bean>
+	<bean class="ru.gubber.citools.server.TeamcityToJiraNotifierBuildServerListener" />
+	<!--Teamcity inApp beans-->
+
+	<!--Lightweight beans with buisness logic -->
+	<bean class="ru.gubber.citools.artifacts.ArtifactFileFactory" />
+	<bean class="ru.gubber.citools.artifacts.ArtifactExplorer" />
+	<bean class="ru.gubber.citools.utils.PropertiesExtractor" />
+	<bean class="ru.gubber.citools.utils.PropertiesToLabelEvaluator" />
+	<!--Lightweight beans with buisness logic -->
+</beans>

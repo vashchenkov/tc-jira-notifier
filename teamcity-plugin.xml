@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamcity-plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:noNamespaceSchemaLocation="urn:schemas-jetbrains-com:teamcity-plugin-v1-xml">
+	<info>
+		<name>tcjiranot</name>
+		<display-name>Teamcity to Jira label</display-name>
+		<version>0.2</version>
+		<description>Plugin to set label to Jira after teamcity build finished</description>
+		<download-url>Plugin download URL</download-url>
+		<email>admin@gubber.ru</email>
+		<vendor>
+			<name>Gubber</name>
+			<url>http://gubber.ru</url>
+			<logo>Plugin vendor logo URL</logo>
+		</vendor>
+	</info>
+	<deployment use-separate-classloader="true"/>
+</teamcity-plugin>
